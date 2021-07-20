@@ -21,5 +21,6 @@ jobs:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
         aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
         application_name: testApplicationPythonTerraform
-        environment_name: testEnviroinmentTerraformJackson        
+        environment_name: testEnviroinmentTerraformJackson
+        region: us-east-2
         deployment_package: deploy.zip
