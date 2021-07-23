@@ -6,9 +6,16 @@ from django.db import models
 from django.utils import timezone
 
 
+class Blog(models.Model):
+    title = models.CharField(max_length=100)
+    published = models.DateField('date published')
+    body = models.TextField() #used to store large text data
+    def __str__(self):
+        return self.title
+
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
+    # pub_date = models.DateTimeField('date published')
     def __str__(self):
         return self.question_text
     # It’s important to add __str__() methods to your models, not only for your own convenience when dealing with the interactive prompt, but also because objects’ representations are used throughout Django’s automatically-generated admin.

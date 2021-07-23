@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+0n!!#x3go+vrf(%0og^#o1#&ttj*yua&bs$^2w2s6av=)!me(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["djangodocker-env.eba-7jvjtrdz.us-east-2.elasticbeanstalk.com","testapplicationpythonterraform.eba-bd5x5mcp.us-east-2.elasticbeanstalk.com"]
+ALLOWED_HOSTS = ["*","djangodocker-env.eba-7jvjtrdz.us-east-2.elasticbeanstalk.com","testapplicationpythonterraform.eba-bd5x5mcp.us-east-2.elasticbeanstalk.com"]
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'jackson_training.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

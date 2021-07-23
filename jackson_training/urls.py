@@ -19,5 +19,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # catching all the urls from the app created called sample application
-     path('sample_application/', include('sample_application.urls'))
+     path('', include('sample_application.urls'))
 ]
