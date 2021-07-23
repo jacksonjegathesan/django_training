@@ -23,6 +23,6 @@ jobs:
         application_name: testApplicationPythonTerraform
         environment_name: testApplicationPythonTerraform
         region: us-east-2
-        version_label: 2.1
+        version_label: 3
         use_existing_version_if_available: true
         deployment_package: deploy.zip

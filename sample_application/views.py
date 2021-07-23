@@ -23,3 +23,15 @@ def view_data(request):
     context['dataset'] = Blog.objects.all()
     # can be used for logs        
     return render(request,'view_data.html',context)
+
+# ---------------------------------------------------------------------------------------------------------------------
+#                               for rest api
+# ---------------------------------------------------------------------------------------------------------------------
+
+from rest_framework import viewsets
+
+from .serializers import *
+
+class BlogView(viewsets.ModelViewSet):
+    queryset = Blog.objects.all()
+    serializer_class = BlogSerializer
